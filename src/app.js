@@ -42,7 +42,6 @@ app
   })
     
     
-    /* Your code here */
   .post(jsonParser, (req, res, next) => {
     const { title, completed = false } = req.body
     const newTodo = { title }
@@ -54,7 +53,7 @@ app
         })
 
     newTodo.completed = completed; 
-    /* Your code here */
+    
 
 app
   .route('/v1/todos/:todo_id')
